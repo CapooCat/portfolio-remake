@@ -7,10 +7,12 @@ import { chooseMe_1, chooseMe_2 } from "@/mocks/chooseMe";
 import StrongPoint from "./StrongPoint";
 import { motion } from "framer-motion";
 import useFramerEffect from "@/hooks/useFramerEffect";
-import Button from "./Button";
+import Link from "./Link";
 
 const SectionChooseMe = () => {
   const variant = useFramerEffect({ effect: "slideUp" });
+  const recipientId = "tran-dat-185284198";
+  const messageURL = `https://www.linkedin.com/messaging/thread/new/?recipient=${recipientId}`;
 
   return (
     <>
@@ -31,9 +33,13 @@ const SectionChooseMe = () => {
         />
         <div className="flex flex-col items-center gap-2 px-4 mt-auto">
           <p className="text-gray-400">Want to know more about me?</p>
-          <Button className="justify-center w-full py-3 text-xl font-medium text-center bg-primary hover:bg-primary/80">
+          <Link
+            className="justify-center w-full py-3 text-xl font-medium text-center bg-primary hover:bg-primary/80"
+            target="_blank"
+            href={messageURL}
+          >
             Let have a chat
-          </Button>
+          </Link>
         </div>
       </motion.div>
     </>
