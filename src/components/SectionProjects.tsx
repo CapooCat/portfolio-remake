@@ -10,8 +10,9 @@ const SectionProjects = () => {
 
   return (
     <motion.div
+      key="5"
       variants={variant}
-      className="flex flex-col w-full max-h-[50%] gap-4 py-4 bg-gray-800 border h-full rounded-2xl"
+      className="flex flex-col lg:h-full h-[450px] max-h-[50%] gap-4 py-4 bg-gray-800/50 border rounded-2xl overflow-hidden"
     >
       <CardTitle text="Top Projects" icon={<IconTrophy size={20} className="text-primary" />} />
       <ProjectList />

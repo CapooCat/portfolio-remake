@@ -1,11 +1,23 @@
 import { AnimationControls } from "framer-motion";
 
 interface IFramerEffectProps {
-  effect: "fadeIn" | "slideUp" | "blinking" | "spin" | "zoom" | "slideInFromLeft" | "rotateSlide";
+  effect: "fadeIn" | "slideUp" | "blinking" | "spin" | "zoom" | "slideInFromLeft" | "rotateSlide" | "welcome";
   options?: { stagger: boolean };
 }
 
 const animation = {
+  welcome: {
+    hidden: {
+      opacity: 0,
+    },
+
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: 3,
+      },
+    },
+  },
   fadeIn: {
     hidden: {
       opacity: 0,
@@ -30,6 +42,9 @@ const animation = {
     animate: {
       opacity: 1,
       y: 0,
+      transition: {
+        duration: 0.3,
+      },
     },
   },
 

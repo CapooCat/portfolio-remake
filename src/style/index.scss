@@ -35,17 +35,43 @@
 }
 
 :root {
-  @apply flex justify-center items-center h-[100svh] bg-gray-900;
+  @apply flex justify-center min-h-[100svh] h-fit text-gray-200/90;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --primary-color-tailwind: 13 146 244;
+  --primary-color-hex: #0d92f4;
+  --primary-color-rgb: 13, 146, 244;
+}
+
+html {
+  @apply bg-primary/5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-in;
+}
+
+.custom-scroll {
+  animation: fadeIn 0.2s ease-in;
+  @apply bg-primary/15 rounded-xl;
 }

@@ -4,7 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#0D92F4",
+        primary: "rgb( var(--primary-color-tailwind) / <alpha-value>)",
+      },
+      screens: {
+        xs: "540px",
+        xss: "430px",
       },
     },
   },

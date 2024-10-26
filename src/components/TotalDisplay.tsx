@@ -12,7 +12,7 @@ const TotalDisplay = ({ number, title, icon }: ITotalDisplay) => {
   };
 
   return (
-    <div className="flex flex-col justify-between flex-1 gap-2 p-4 text-center bg-gray-800 border h-fit rounded-2xl">
+    <div className="flex flex-col justify-between flex-1 gap-2 p-4 text-center border bg-gray-800/50 h-fit rounded-2xl">
       <p className="flex items-center justify-center text-transparent text-7xl via-gray-700 via-70% bg-gradient-to-b from-white to-transparent bg-clip-text to-95% font-medium">
         {number}
         <span className="text-4xl text-primary">+</span>
