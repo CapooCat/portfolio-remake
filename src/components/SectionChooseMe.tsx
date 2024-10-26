@@ -11,8 +11,7 @@ import Link from "./Link";
 
 const SectionChooseMe = () => {
   const variant = useFramerEffect({ effect: "slideUp" });
-  const recipientId = "tran-dat-185284198";
-  const messageURL = `https://www.linkedin.com/messaging/thread/new/?recipient=${recipientId}`;
+  const mail = "mailto:tranthaitat99@gmail.com";
 
   return (
     <>
@@ -36,7 +35,7 @@ const SectionChooseMe = () => {
           <Link
             className="justify-center w-full py-3 text-xl font-medium text-center bg-primary hover:bg-primary/80"
             target="_blank"
-            href={messageURL}
+            href={mail}
           >
             Let have a chat
           </Link>
