@@ -7,7 +7,7 @@ const SectionSummary = () => {
   const variant = useFramerEffect({ effect: "slideUp" });
 
   return (
-    <motion.div key="2" variants={variant} className="flex flex-col gap-4 xs:flex-row">
+    <motion.div variants={variant} className="flex flex-col gap-4 xs:flex-row">
       <TotalDisplay number={5} title="Happy Clients" icon={<IconBriefcase2 size={14} />} />
       <TotalDisplay number={5} title="Git Projects" icon={<IconBrandGithub size={14} />} />
       <TotalDisplay number={3} title="Year expertise" icon={<IconCode size={14} />} />

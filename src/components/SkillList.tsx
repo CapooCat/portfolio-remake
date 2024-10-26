@@ -21,18 +21,18 @@ const SkillList = () => {
       autoHide
     >
       <motion.ul
-        className="flex flex-wrap justify-center gap-2 px-4 w-fit"
+        className="grid justify-center w-full grid-cols-1 gap-2 px-4 xs:grid-cols-2"
         variants={variants}
         animate="animate"
         initial="hidden"
       >
         {skills.map((item, index) => (
           <li className="overflow-hidden" key={index}>
-            <motion.div variants={variants} className="flex gap-2 py-2 pl-2 pr-4 bg-gray-900 w-fit rounded-2xl">
+            <motion.div variants={variants} className="flex w-full h-full gap-2 py-2 pl-2 pr-4 bg-gray-900 rounded-2xl">
               <Icon icon={item.icon} />
               <div>
                 <p className="font-bold">{item.name}</p>
-                <p className="text-sm text-gray-400 ">{item.years} year of experiences</p>
+                <p className="text-sm text-gray-400">{item.years} year of experiences</p>
               </div>
             </motion.div>
           </li>

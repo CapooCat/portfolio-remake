@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { AnimatePresence, motion, useAnimate, usePresence } from "framer-motion";
 import wait from "@/utils/wait";
 const WrapperWelcome = ({ children }: { children: React.ReactNode }) => {
@@ -12,6 +12,7 @@ const WrapperWelcome = ({ children }: { children: React.ReactNode }) => {
     // await wait(2000);
     // await animate(scope.current, { y: "100%" });
     setText("Welcome to my portfolio!");
+    await wait(500);
     await animate(scope.current, { y: 0 });
     await wait(1500);
     await animate(scope.current, { y: "-110%" });
@@ -25,17 +26,19 @@ const WrapperWelcome = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <AnimatePresence>
-      {!showApp && (
-        <div className="fixed top-0 bottom-0 left-0 right-0 flex items-center justify-center w-full h-full">
-          <div className="overflow-hidden">
-            <motion.div ref={scope} initial={{ y: "100%" }} className="text-3xl">
-              {text}
-            </motion.div>
+      <Fragment key="welcome">
+        {!showApp && (
+          <div className="fixed top-0 bottom-0 left-0 right-0 flex items-center justify-center w-full h-full">
+            <div className="overflow-hidden">
+              <motion.div ref={scope} initial={{ y: "100%" }} className="text-3xl">
+                {text}
+              </motion.div>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </Fragment>
 
-      {showApp && children}
+      <Fragment key="main">{showApp && children}</Fragment>
     </AnimatePresence>
   );
 };

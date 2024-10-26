@@ -8,7 +8,6 @@ export default {
       },
       screens: {
         xs: "540px",
-        xss: "430px",
       },
     },
   },

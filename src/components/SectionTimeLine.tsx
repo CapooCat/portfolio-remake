@@ -11,7 +11,6 @@ const SectionTimeLine = () => {
 
   return (
     <motion.div
-      key="6"
       className="flex flex-col 2xl:h-[60%] 2xl:w-full lg:w-[50%] h-[450px] gap-4 py-4 bg-gray-800/50 border rounded-2xl"
       variants={variant}
       onAnimationComplete={() => setShowTimeLine(true)}

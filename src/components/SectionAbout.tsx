@@ -9,12 +9,12 @@ import {
   IconBuildings,
   IconDownload,
   IconMapPin,
-  IconPhone,
   IconSchool,
   IconWorld,
 } from "@tabler/icons-react";
 import Tag from "./Tag";
 import Link from "./Link";
+import avatar from "@/assets/avatar.png";
 
 const SectionAbout = () => {
   const variant = useFramerEffect({ effect: "slideUp" });
@@ -24,13 +24,13 @@ const SectionAbout = () => {
   const cv = "https://drive.google.com/file/d/1mprst1gjWI3NW-_nMP7eyiKzOjlr9tkV/view?usp=sharing";
 
   return (
-    <motion.div key="1" variants={variant} className="flex flex-col w-full gap-4 p-4 border bg-gray-800/50 rounded-2xl">
-      <div className="relative flex gap-4">
+    <motion.div variants={variant} className="flex flex-col w-full gap-4 p-4 border bg-gray-800/50 rounded-2xl">
+      <div className="relative flex flex-col gap-4 xs:flex-row">
         <div className="flex-shrink-0 overflow-hidden bg-gray-900 size-36 rounded-2xl">
-          <img src="src/assets/avatar.png" />
+          <img src={avatar} alt="avatar" />
         </div>
         <div className="flex flex-col gap-2">
-          <div className="flex items-center gap-3 px-4 py-1 mt-12 bg-gray-900 xss:mt-0 rounded-2xl w-fit">
+          <div className="flex items-center gap-3 px-4 py-1 bg-gray-900 rounded-2xl w-fit">
             <BlinkingDot />
             <span className="line-clamp-1">Available To Work</span>
           </div>
@@ -47,7 +47,7 @@ const SectionAbout = () => {
           href={cv}
           target="_blank"
         >
-          <span className="hidden xs:block">Resume</span>
+          Resume
         </Link>
       </div>
       <ul className="flex flex-wrap gap-2">
