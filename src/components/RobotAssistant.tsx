@@ -35,7 +35,7 @@ const RobotAssistant = ({ size = 30 }: { size?: number }) => {
       <div className="absolute w-[50%] bg-gray-700 top-0 rounded-b-xl" style={{ height: size / 9 }} />
       <div
         style={{ height: size, width: size }}
-        className="flex items-center justify-center bg-black rounded-xl"
+        className="flex items-center justify-center bg-black rounded-lg"
         ref={robotPosition}
       >
         <motion.div
