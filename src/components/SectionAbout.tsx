@@ -23,7 +23,7 @@ const SectionAbout = () => {
   const linkedin = "https://www.linkedin.com/in/tran-dat-185284198/";
   const github = "https://github.com/CapooCat";
   const leetcode = "https://leetcode.com/u/tranthaitat99/";
-  const cv = "https://drive.google.com/file/d/1mprst1gjWI3NW-_nMP7eyiKzOjlr9tkV/view?usp=sharing";
+  const cv = "https://drive.google.com/file/d/1TMYKKT1qVln8V56fuVHNKTPPpfGW0MJH/view?usp=drive_link";
 
   return (
     <motion.div variants={variant} className="flex flex-col w-full gap-4 p-4 border bg-gray-800/50 rounded-2xl">
