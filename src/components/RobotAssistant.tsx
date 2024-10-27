@@ -31,7 +31,7 @@ const RobotAssistant = ({ size = 30 }: { size?: number }) => {
   }, []);
 
   return (
-    <div className="relative flex justify-center border-2 border-gray-700 rounded-xl h-fit w-fit">
+    <div className="relative flex justify-center overflow-hidden border-2 border-gray-700 rounded-xl h-fit w-fit">
       <div className="absolute w-[50%] bg-gray-700 top-0 rounded-b-xl" style={{ height: size / 9 }} />
       <div
         style={{ height: size, width: size }}
