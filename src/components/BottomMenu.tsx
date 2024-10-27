@@ -12,7 +12,7 @@ const BottomMenu = () => {
       initial="hidden"
     >
       <div className="leading-8">
-        This website is originally made by <span className="font-bold text-primary">Tran Thai Dat</span>
+        This website was originally made by <span className="font-bold text-primary">Tran Thai Dat</span>
       </div>
       <div className="leading-8">Simplicity is the soul of efficiency - "Austin Freeman"</div>
     </motion.div>

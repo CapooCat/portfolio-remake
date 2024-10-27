@@ -19,7 +19,7 @@ const SectionChooseMe = () => {
         className="flex flex-col 2xl:h-[40%] lg:h-[450px] 2xl:w-full lg:w-[50%] gap-4 py-4 bg-gray-800/50 border rounded-2xl"
         variants={variant}
       >
-        <CardTitle text="Why To Choose Me ?" icon={<IconThumbUp size={20} className="text-primary" />} />
+        <CardTitle text="Why Choose Me?" icon={<IconThumbUp size={20} className="text-primary" />} />
         <InfiniteAutoScroll
           direction="right"
           data={chooseMe_1}

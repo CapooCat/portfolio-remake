@@ -15,7 +15,7 @@ const SectionReviews = () => {
     <motion.div variants={variant} className="flex flex-col w-full h-full gap-4 py-4 border bg-gray-800/50 rounded-2xl">
       <CardTitle text="Reviews" icon={<IconCarambola size={20} className="text-primary" />} />
       <div className="px-4">
-        <div className="px-4 py-1 bg-gray-900 w-fit rounded-2xl">Number of Review: {reviews.length}</div>
+        <div className="px-4 py-1 bg-gray-900 w-fit rounded-2xl">Number of Reviews: {reviews.length}</div>
       </div>
       <InfiniteAutoScroll
         direction="right"

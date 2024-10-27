@@ -38,7 +38,7 @@ const SectionAbout = () => {
           </div>
           <p className="text-2xl font-medium">Tran Thai Dat</p>
           <p>
-            I'm a Frontend Developer with 3 years of experiences. I have strong ability to construct complex, responsive
+            I'm a Frontend Developer with 3 years of experience. I have strong ability to construct complex, responsive
             dashboards from Figma designs. Skilled in delivering high-performance websites on both desktop and mobile
             platforms.
           </p>

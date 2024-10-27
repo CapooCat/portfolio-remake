@@ -15,7 +15,7 @@ const timelines: TItem[] = [
     title: "Cao thang College",
     location: "District 1, Ho Chi Minh City",
     date: "04/2017 - 04/2021",
-    description: "Studying at Cao Thang College mature in computer science",
+    description: "Studying at Cao Thang College major in computer science",
   },
   {
     icon: <IconBriefcase />,
@@ -29,7 +29,7 @@ const timelines: TItem[] = [
     title: "ByteTech",
     location: "District 3, Ho Chi Minh City",
     date: "08/2024 - Present",
-    description: "Middle-level Frontend Developer at ByteTech",
+    description: "Mid-level Frontend Developer at ByteTech",
   },
 ];
 
