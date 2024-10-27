@@ -6,7 +6,7 @@ const BottomMenu = () => {
   const variants = useFramerEffect({ effect: "fadeIn" });
   return (
     <motion.div
-      className="!container w-full flex px-6 py-4 gap-1 justify-between"
+      className="!container w-full flex px-6 py-4 gap-1 justify-between flex-col items-center md:flex-row text-center"
       variants={variants}
       animate="animate"
       initial="hidden"
