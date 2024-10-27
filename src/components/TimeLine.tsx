@@ -50,7 +50,7 @@ const TimeLine = () => {
               <div className="flex items-center justify-center p-1 bg-gray-800 size-7 rounded-xl">{item.icon}</div>
             )}
           </div>
-          <p className="text-sm">{item.location}</p>
+          <p className="pb-0.5 text-sm ">{item.location}</p>
           <p className="text-sm text-gray-400">{item.date}</p>
           <p>{item.description}</p>
         </div>

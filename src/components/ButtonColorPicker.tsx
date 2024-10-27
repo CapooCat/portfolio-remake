@@ -3,19 +3,21 @@ import { ColorPicker, IColor, useColor } from "react-color-palette";
 import "react-color-palette/css";
 import Popover from "./Popover";
 import Button from "./Button";
-import { getCssVariable } from "@/utils/getCssVariable";
-import { setCssVariable } from "../utils/setCssVariable";
-import updateFavicon from "@/utils/updateFavicon";
+import useThemeColor from "@/hooks/useThemeColorStore";
+import updateFaviconColor from "@/utils/updateFaviconColor";
+import updateThemeColor from "@/utils/updateThemeColor";
+import debounce from "@/utils/deboubce";
 
 const ButtonColorPicker = () => {
-  const [color, setColor] = useColor(getCssVariable("--primary-color-hex"));
+  const [themeColor, storeThemeColor] = useThemeColor();
+  const [color, setColor] = useColor(themeColor.hex);
+  const updateFavicon = debounce(updateFaviconColor, 100);
 
   const handleColorChange = (color: IColor) => {
     setColor(color);
-    setCssVariable("--primary-color-hex", color.hex);
-    setCssVariable("--primary-color-tailwind", `${color.rgb.r} ${color.rgb.g} ${color.rgb.b}`);
-    setCssVariable("--primary-color-rgb", `${color.rgb.r}, ${color.rgb.g}, ${color.rgb.b}`);
-    updateFavicon();
+    storeThemeColor(color);
+    updateFavicon(color);
+    updateThemeColor(color);
   };
 
   return (

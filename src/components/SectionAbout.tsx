@@ -14,7 +14,7 @@ import {
 } from "@tabler/icons-react";
 import Tag from "./Tag";
 import Link from "./Link";
-import avatar from "@/assets/avatar.png";
+import avatar from "@/assets/avatar.jpg";
 
 const SectionAbout = () => {
   const variant = useFramerEffect({ effect: "slideUp" });
@@ -52,7 +52,7 @@ const SectionAbout = () => {
       </div>
       <ul className="flex flex-wrap gap-2">
         <Tag text="Vietnam" icon={<IconMapPin size={14} />} />
-        <Tag text="Ho Chi Minh" icon={<IconBuildings size={14} />} />
+        <Tag text="Ho Chi Minh City" icon={<IconBuildings size={14} />} />
         <Tag text="English and Vietnamese" icon={<IconWorld size={14} />} />
         <Tag text="Cao Thang Technical College" icon={<IconSchool size={14} />} />
       </ul>

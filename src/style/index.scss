@@ -73,5 +73,22 @@ html {
 
 .custom-scroll {
   animation: fadeIn 0.2s ease-in;
-  @apply bg-primary/15 rounded-xl;
+  @apply bg-primary/30 rounded-xl;
+}
+
+.custom-card {
+  .custom-card-img {
+    @apply transition-all;
+  }
+
+  &:hover {
+    .custom-card-img {
+      @apply scale-110;
+    }
+  }
+}
+
+.hidden-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
