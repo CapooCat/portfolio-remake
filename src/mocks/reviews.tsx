@@ -3,7 +3,7 @@ const reviews = [
     name: "Tuan Truong",
     role: "Frontend Techlead at ByteTech",
     description:
-      "I'm impressed by how quickly Dat learns and adapts to our CDP React projects, his problems solving abilities are no exception. He's the guy that we can trust.",
+      "I'm impressed by how quickly Dat learns and adapts to our CDP projects, his problems solving abilities are no exception. He's the guy that we can trust.",
   },
   {
     name: "Nghi Dao",
@@ -15,7 +15,7 @@ const reviews = [
     name: "Thanh Ngoc",
     role: "Project Manager at FPT IS",
     description:
-      "He's a strong team player, always willing to step in and help others when they're facing challenges. Your collaborative approach and dedication to team success set a great example for everyone!",
+      "He's a strong team player, always willing to step in and help others when they're facing challenges. His collaborative approach and dedication to team success set a great example for everyone!",
   },
 ];
 
