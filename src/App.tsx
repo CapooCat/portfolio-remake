@@ -8,7 +8,6 @@ import SectionSkills from "@/components/SectionSkills";
 import SectionProjects from "@/components/SectionProjects";
 import SectionChooseMe from "@/components/SectionChooseMe";
 import SectionTimeLine from "@/components/SectionTimeLine";
-import WebsiteTechStack from "@/components/WebsiteTechStack";
 import TopMenu from "@/components/TopMenu";
 import WrapperWelcome from "./components/WrapperWelcome";
 import CursorLight from "./components/CursorLight";
@@ -16,6 +15,7 @@ import updateFaviconColor from "@/utils/updateFaviconColor";
 import updateThemeColor from "./utils/updateThemeColor";
 import useThemeColorStore from "./hooks/useThemeColorStore";
 import debounce from "./utils/deboubce";
+import BottomMenu from "@/components/BottomMenu";
 
 function App() {
   const variant = useFramerEffect({ effect: "slideUp", options: { stagger: true } });
@@ -35,7 +35,7 @@ function App() {
       </header>
 
       <motion.main
-        className="!container flex flex-wrap gap-4 min-h-full max-w-[100svw] px-6 pb-4"
+        className="!container flex flex-wrap gap-4 min-h-full max-w-[100svw] px-6"
         variants={variant}
         animate="animate"
         initial="hidden"
@@ -58,7 +58,7 @@ function App() {
       </motion.main>
 
       <footer>
-        <WebsiteTechStack />
+        <BottomMenu />
       </footer>
     </WrapperWelcome>
   );

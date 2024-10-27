@@ -5,6 +5,7 @@ import BlinkingDot from "./BlinkingDot";
 import {
   IconBrandFacebook,
   IconBrandGithub,
+  IconBrandLeetcode,
   IconBrandLinkedin,
   IconBuildings,
   IconDownload,
@@ -21,6 +22,7 @@ const SectionAbout = () => {
   const facebook = "https://www.facebook.com/Anticard99/";
   const linkedin = "https://www.linkedin.com/in/tran-dat-185284198/";
   const github = "https://github.com/CapooCat";
+  const leetcode = "https://leetcode.com/u/tranthaitat99/";
   const cv = "https://drive.google.com/file/d/1mprst1gjWI3NW-_nMP7eyiKzOjlr9tkV/view?usp=sharing";
 
   return (
@@ -56,7 +58,7 @@ const SectionAbout = () => {
         <Tag text="English and Vietnamese" icon={<IconWorld size={14} />} />
         <Tag text="Cao Thang Technical College" icon={<IconSchool size={14} />} />
       </ul>
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-2">
         <Link icon={<IconBrandFacebook size={18} />} href={facebook} target="_blank">
           Facebook
         </Link>
@@ -65,6 +67,9 @@ const SectionAbout = () => {
         </Link>
         <Link icon={<IconBrandGithub size={18} />} href={github} target="_blank">
           Github
+        </Link>
+        <Link icon={<IconBrandLeetcode size={18} />} href={leetcode} target="_blank">
+          Leetcode
         </Link>
       </div>
     </motion.div>

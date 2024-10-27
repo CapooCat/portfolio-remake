@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useFramerEffect from "@/hooks/useFramerEffect";
-import { IconBriefcase, IconSchool } from "@tabler/icons-react";
 import Scrollbars from "react-custom-scrollbars-2";
+import timelines from "@/mocks/timelines";
 
 type TItem = {
   icon?: React.ReactNode;
@@ -14,30 +14,6 @@ type TItem = {
 
 const TimeLine = () => {
   const variant = useFramerEffect({ effect: "slideUp", options: { stagger: true } });
-
-  const items: TItem[] = [
-    {
-      icon: <IconSchool />,
-      title: "Cao thang College",
-      location: "District 1, Ho Chi Minh City",
-      date: "04/2017 - 04/2021",
-      description: "Studying at Cao Thang College mature in computer science",
-    },
-    {
-      icon: <IconBriefcase />,
-      title: "FPT Information System",
-      location: "District 7, Ho Chi Minh City",
-      date: "05/2021 - 08/2024",
-      description: "Frontend Developer at FPT Information System",
-    },
-    {
-      icon: <IconBriefcase />,
-      title: "ByteTech",
-      location: "District 3, Ho Chi Minh City",
-      date: "08/2024 - Present",
-      description: "Middle-level Frontend Developer at ByteTech",
-    },
-  ];
 
   const ItemTemplate = (item: TItem) => {
     return (
@@ -67,7 +43,7 @@ const TimeLine = () => {
       <div className="relative flex flex-col w-full pl-6 pr-6 h-fit">
         <div className="w-[2px] bg-gray-700 h-full absolute z-0 rounded-xl animate-fadeIn" />
         <motion.ul className="z-10" variants={variant} animate="animate" initial="hidden">
-          {items.map((item, index) => (
+          {timelines.map((item, index) => (
             <ItemTemplate {...item} key={index} />
           ))}
         </motion.ul>

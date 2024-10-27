@@ -3,6 +3,7 @@ import ButtonColorPicker from "./ButtonColorPicker";
 import { motion } from "framer-motion";
 import useFramerEffect from "@/hooks/useFramerEffect";
 import RobotAssistant from "./RobotAssistant";
+import Logo from "@/assets/logo.svg?react";
 
 const TopMenu = () => {
   const variants = useFramerEffect({ effect: "fadeIn" });
@@ -14,7 +15,10 @@ const TopMenu = () => {
       animate="animate"
       initial="hidden"
     >
-      <ButtonColorPicker />
+      <div className="flex items-center gap-2 size-fit">
+        <Logo className="size-9 text-primary" />
+        <ButtonColorPicker />
+      </div>
       <RobotAssistant />
     </motion.div>
   );
