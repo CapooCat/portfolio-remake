@@ -39,7 +39,7 @@ const SectionAbout = () => {
           <p className="text-2xl font-medium">Tran Thai Dat</p>
           <p>
             I'm a Frontend Developer with 3 years of experience, expertise in ReactJS, Agile Scrum, and CRM. Skilled in
-            building high-performance, responsive dashboards design from Figma for desktop and mobile.
+            building high-performance, responsive dashboards for desktop and mobile.
           </p>
         </div>
         <Link
