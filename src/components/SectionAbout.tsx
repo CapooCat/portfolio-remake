@@ -40,7 +40,7 @@ const SectionAbout = () => {
           <p>
             I'm a Frontend Developer with 3 years of experience, coupled with 2 years of expertise in ReactJS.
             Proficient in Agile Scrum and CRM projects and strong expertise in constructing complex dashboard designs
-            from Figma with highly responsive and high performance across desktop and mobile
+            from Figma with highly responsive and high performance across desktop and mobile.
           </p>
         </div>
         <Link
