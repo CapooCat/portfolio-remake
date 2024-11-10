@@ -20,7 +20,7 @@ const projects: TProject[] = [
     role: "FE",
     image: fptID,
     description:
-      "An SSO project enabling single-login access to all FPT services without repeated login prompts. you find these in LongChau, FShare,...",
+      "An SSO project enabling single-login access to all FPT services without repeated login prompts. you find this in LongChau, FShare,...",
     website: "https://accounts.fpt.vn/",
     techStack: ["JQuery", "SCSS", "C# .NET Core 6", "Blazor", "Javascript"],
   },
