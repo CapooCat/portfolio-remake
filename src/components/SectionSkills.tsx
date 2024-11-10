@@ -4,6 +4,7 @@ import CardTitle from "./CardTitle";
 import SkillList from "./SkillList";
 import useFramerEffect from "@/hooks/useFramerEffect";
 import { motion } from "framer-motion";
+import dataRead from "@/assets/constant/dataRead";
 
 const SectionSkills = () => {
   const [showSkillList, setShowSkillList] = useState(false);
@@ -14,6 +15,7 @@ const SectionSkills = () => {
       variants={variant}
       className="flex flex-col w-full lg:h-full h-[450px] 2xl:max-h-[40%] overflow-hidden gap-4 py-4 bg-gray-800/50 border rounded-2xl"
       onAnimationComplete={() => setShowSkillList(true)}
+      data-read={dataRead.skills}
     >
       <CardTitle text="Skills" icon={<IconWand size={20} className="text-primary" />} />
       {showSkillList && <SkillList />}

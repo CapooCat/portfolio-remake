@@ -39,7 +39,7 @@ const ProjectList = () => {
     const ref = useRef<HTMLDivElement | null>(null);
     const [showDescription, setShowDescription] = useState(false);
     const variants = useFramerEffect({ effect: "slideUp", options: { stagger: true } });
-    const cn_image = cn("object-cover aspect-video custom-card-img brightness-75 transition-all", {
+    const cn_image = cn("object-cover aspect-video w-full custom-card-img brightness-75 transition-all", {
       "blur-sm": showDescription,
     });
 

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import useFramerEffect from "@/hooks/useFramerEffect";
 import RobotAssistant from "./RobotAssistant";
 import Logo from "@/assets/logo.svg?react";
+import dataRead from "@/assets/constant/dataRead";
 
 const TopMenu = () => {
   const variants = useFramerEffect({ effect: "fadeIn" });
@@ -19,7 +20,9 @@ const TopMenu = () => {
         <Logo className="size-9 text-primary" />
         <ButtonColorPicker />
       </div>
-      <RobotAssistant />
+      <div data-read={dataRead.robot}>
+        <RobotAssistant />
+      </div>
     </motion.div>
   );
 };

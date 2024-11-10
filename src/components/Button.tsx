@@ -4,9 +4,17 @@ import cn from "@/utils/cn";
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: React.ReactNode;
   iconPosition?: "left" | "right";
+  dataRead?: string;
 }
 
-export default function Button({ children, icon, iconPosition = "left", className = "", ...props }: IButtonProps) {
+export default function Button({
+  children,
+  icon,
+  iconPosition = "left",
+  dataRead,
+  className = "",
+  ...props
+}: IButtonProps) {
   const cn_button = cn(
     "transition-all flex items-center gap-2 px-4 py-2 bg-gray-900 rounded-2xl",
     "hover:bg-gray-700",
@@ -15,7 +23,7 @@ export default function Button({ children, icon, iconPosition = "left", classNam
     }
   );
   return (
-    <button className={cn_button} {...props}>
+    <button className={cn_button} {...props} data-read={dataRead}>
       {icon && iconPosition === "left" && icon}
       {children}
       {icon && iconPosition === "right" && icon}

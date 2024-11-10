@@ -16,6 +16,8 @@ import {
 import Tag from "./Tag";
 import Link from "./Link";
 import avatar from "@/assets/avatar.jpg";
+import dataRead from "@/assets/constant/dataRead";
+import AnimateText from "./AnimateText";
 
 const SectionAbout = () => {
   const variant = useFramerEffect({ effect: "slideUp" });
@@ -26,7 +28,11 @@ const SectionAbout = () => {
   const cv = "https://drive.google.com/file/d/13Fz8Q6yYvbM1fJJbctwwVeVIzUkjlKul/view?usp=drive_link";
 
   return (
-    <motion.div variants={variant} className="flex flex-col w-full gap-4 p-4 border bg-gray-800/50 rounded-2xl">
+    <motion.div
+      variants={variant}
+      className="flex flex-col w-full gap-4 p-4 border bg-gray-800/50 rounded-2xl"
+      data-read={dataRead.about}
+    >
       <div className="relative flex flex-col gap-4 xs:flex-row">
         <div className="flex-shrink-0 overflow-hidden bg-gray-900 size-36 rounded-2xl">
           <img src={avatar} alt="avatar" />
@@ -37,10 +43,10 @@ const SectionAbout = () => {
             <span className="line-clamp-1">Available To Work</span>
           </div>
           <p className="text-2xl font-medium">Tran Thai Dat</p>
-          <p>
-            I'm a Frontend Developer with 3 years of experience, expertise in ReactJS, Agile Scrum, and CRM. Skilled in
-            building high-performance, responsive dashboards for desktop and mobile.
-          </p>
+          <AnimateText
+            text="I'm a Frontend Developer with 3 years of experience, expertise in React, Javascript and Typescript. Skilled
+            in Agile Scrum Methodologies and ERP projects. I like simplify web development to make life easier."
+          />
         </div>
         <Link
           icon={<IconDownload size={18} />}

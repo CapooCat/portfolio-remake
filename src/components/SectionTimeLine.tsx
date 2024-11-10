@@ -4,6 +4,7 @@ import { IconTimeline } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import useFramerEffect from "@/hooks/useFramerEffect";
 import TimeLine from "./TimeLine";
+import dataRead from "@/assets/constant/dataRead";
 
 const SectionTimeLine = () => {
   const [showTimeLine, setShowTimeLine] = useState(false);
@@ -14,6 +15,7 @@ const SectionTimeLine = () => {
       className="flex flex-col 2xl:h-[60%] 2xl:w-full lg:w-[50%] h-[450px] gap-4 py-4 bg-gray-800/50 border rounded-2xl"
       variants={variant}
       onAnimationComplete={() => setShowTimeLine(true)}
+      data-read={dataRead.timeline}
     >
       <CardTitle text="Timeline" icon={<IconTimeline size={20} className="text-primary" />} />
       {showTimeLine && <TimeLine />}
