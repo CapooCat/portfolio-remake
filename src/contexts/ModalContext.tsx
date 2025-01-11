@@ -85,9 +85,10 @@ const Modal = ({ children }: { children: ReactNode }) => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 50 }}
                   transition={{ duration: 0.3, delay: 0.4, type: "spring" }}
-                  className="pb-4 text-2xl font-bold"
+                  className="flex flex-col items-center pb-4 text-2xl font-bold"
                 >
                   {modalProps?.title}
+                  <div className="w-20 h-0.5 mt-2 bg-primary rounded-xl" />
                 </motion.div>
               )}
               <motion.div

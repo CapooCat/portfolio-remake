@@ -20,16 +20,22 @@ const ModalCertificates = () => {
         {certificates.map((item, index) => (
           <motion.li
             variants={variants}
-            className="z-10 flex w-full gap-4 p-4 py-3 border rounded-xl bg-black/25"
+            className="z-10 flex w-full gap-3 p-4 py-3 border rounded-xl bg-black/25"
             key={index}
           >
             {item.icon}
             <div className="flex flex-col flex-1">
-              <span className="text-base font-bold leading-6">{item.title}</span>
-              <span className="text-base">{item.brand}</span>
-              <span className="text-sm text-gray-500">Issued: {dayjs(item.date).format("DD MMM YYYY")}</span>
-              <span className="text-sm text-gray-500 line-clamp-1">Id: {item.id}</span>
-              <Link icon={<IconExternalLink size={18} />} target="_blank" className="mt-2 w-fit" href={item.link}>
+              <span className="text-base font-bold leading-5">{item.title}</span>
+              <span className="text-base pb-0.5">{item.brand}</span>
+              <span className="text-sm text-gray-400">Issued: {dayjs(item.date).format("DD MMM YYYY")}</span>
+              <span className="text-sm text-gray-400 line-clamp-1">Id: {item.id}</span>
+              <Link
+                icon={<IconExternalLink size={18} />}
+                iconPosition="right"
+                target="_blank"
+                className="mt-2 w-fit"
+                href={item.link}
+              >
                 Show Certificate
               </Link>
             </div>

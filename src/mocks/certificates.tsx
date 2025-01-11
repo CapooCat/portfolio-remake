@@ -37,7 +37,7 @@ export const certificates = [
   {
     icon: <IconCertificate className="p-2 bg-gray-800 size-12 rounded-xl aspect-square text-primary" />,
     title: "JavaScript Algorithms and Data Structures",
-    brand: "freeCodeCamp",
+    brand: "FreeCodeCamp",
     date: "2023-09-17",
     id: "fcc89089269-2086-4f63-b0c9-ad8eac1b2cf7",
     link: "https://www.freecodecamp.org/certification/fcc89089269-2086-4f63-b0c9-ad8eac1b2cf7/javascript-algorithms-and-data-structures",
