@@ -10,15 +10,19 @@ const ModalCertificates = () => {
   const variants = useFramerEffect({ effect: "slideUp", options: { stagger: true } });
 
   return (
-    <div className="max-w-[850px]">
+    <div className="w-full max-w-[850px]">
       <motion.ul
         variants={variants}
         animate="animate"
         initial="hidden"
-        className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2"
+        className="grid w-full grid-cols-1 gap-2 sm:grid-cols-2"
       >
         {certificates.map((item, index) => (
-          <motion.li variants={variants} className="z-10 flex gap-4 p-4 py-3 border rounded-xl bg-black/25" key={index}>
+          <motion.li
+            variants={variants}
+            className="z-10 flex w-full gap-4 p-4 py-3 border rounded-xl bg-black/25"
+            key={index}
+          >
             {item.icon}
             <div className="flex flex-col flex-1">
               <span className="text-base font-bold leading-6">{item.title}</span>
