@@ -16,6 +16,7 @@ import updateThemeColor from "./utils/updateThemeColor";
 import useThemeColorStore from "./hooks/useThemeColorStore";
 import debounce from "./utils/deboubce";
 import BottomMenu from "@/components/BottomMenu";
+import Modal from "./contexts/ModalContext";
 
 function App() {
   const variant = useFramerEffect({ effect: "slideUp", options: { stagger: true } });
@@ -28,39 +29,41 @@ function App() {
   }, []);
 
   return (
-    <WrapperWelcome>
-      <CursorLight />
-      <header className="sticky top-0 left-0 z-50 flex justify-center w-full">
-        <TopMenu />
-      </header>
+    <Modal>
+      <WrapperWelcome>
+        <CursorLight />
+        <header className="sticky top-0 left-0 z-50 flex justify-center w-full">
+          <TopMenu />
+        </header>
 
-      <motion.main
-        className="!container flex flex-wrap gap-4 min-h-full max-w-[100svw] px-6"
-        variants={variant}
-        animate="animate"
-        initial="hidden"
-      >
-        <div className="flex flex-col 2xl:w-[35%] min-h-full gap-4 lg:w-[50%] w-full">
-          <SectionAbout />
-          <SectionSummary />
-          <SectionReviews />
-        </div>
+        <motion.main
+          className="!container flex flex-wrap gap-4 min-h-full max-w-[100svw] px-6"
+          variants={variant}
+          animate="animate"
+          initial="hidden"
+        >
+          <div className="flex flex-col 2xl:w-[35%] min-h-full gap-4 lg:w-[50%] w-full">
+            <SectionAbout />
+            <SectionSummary />
+            <SectionReviews />
+          </div>
 
-        <div className="flex flex-col 2xl:w-[35%] flex-1 min-h-full gap-4 lg:w-[50%] w-full">
-          <SectionSkills />
-          <SectionProjects />
-        </div>
+          <div className="flex flex-col 2xl:w-[35%] flex-1 min-h-full gap-4 lg:w-[50%] w-full">
+            <SectionSkills />
+            <SectionProjects />
+          </div>
 
-        <div className="flex gap-4 2xl:flex-col 2xl:w-[30%] 2xl:min-h-full 2xl:pb-0 lg:flex-row flex-col w-full">
-          <SectionTimeLine />
-          <SectionChooseMe />
-        </div>
-      </motion.main>
+          <div className="flex gap-4 2xl:flex-col 2xl:w-[30%] 2xl:min-h-full 2xl:pb-0 lg:flex-row flex-col w-full">
+            <SectionTimeLine />
+            <SectionChooseMe />
+          </div>
+        </motion.main>
 
-      <footer>
-        <BottomMenu />
-      </footer>
-    </WrapperWelcome>
+        <footer>
+          <BottomMenu />
+        </footer>
+      </WrapperWelcome>
+    </Modal>
   );
 }
 
