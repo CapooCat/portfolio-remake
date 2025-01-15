@@ -1,6 +1,6 @@
 const dataRead = {
   about:
-    "This section provides a brief introduction about me, including my location, languages, education, and profiles. For more details, you can check out my resume at the top right of this section.",
+    "This section provides a brief introduction about me, including my location, languages, education, and profiles. For more details, you can check out my resume at the top right of this section but you might need to request for it first.",
   reviews:
     "This section shows what my colleagues and supervisor think of me and highlighting how my contributions add value to the company.",
   skills:
@@ -10,7 +10,7 @@ const dataRead = {
   timeline:
     "This section presents a timeline of my career journey, showcasing where I've studied, worked, and where I currently am.",
   certificate:
-    "Here's the number of certificates I've earned throughout my career. If you're interested, click the button on the right to view the detailed list.",
+    "Here's the number of certificates I've earned throughout my career. If you're interested, click the button on the right side of this section to view the detailed list.",
   chooseMe: "This section highlights my soft skills, which may be of interest to some.",
   emailMe: "You can use the button to compose an email to me directly.",
   githubProjects: "This is the total number of projects I have on my GitHub.",

@@ -18,14 +18,10 @@ import Link from "./Link";
 import avatar from "@/assets/avatar.jpg";
 import dataRead from "@/assets/constant/dataRead";
 import AnimateText from "./AnimateText";
+import { about } from "@/mocks/about";
 
 const SectionAbout = () => {
   const variant = useFramerEffect({ effect: "slideUp" });
-  const facebook = "https://www.facebook.com/Anticard99/";
-  const linkedin = "https://www.linkedin.com/in/tran-dat-185284198/";
-  const github = "https://github.com/CapooCat";
-  const leetcode = "https://leetcode.com/u/tranthaitat99/";
-  const cv = "https://drive.google.com/file/d/13Fz8Q6yYvbM1fJJbctwwVeVIzUkjlKul/view?usp=drive_link";
 
   return (
     <motion.div
@@ -42,16 +38,13 @@ const SectionAbout = () => {
             <BlinkingDot />
             <span className="line-clamp-1">Available To Work</span>
           </div>
-          <p className="text-2xl font-medium">Tran Thai Dat</p>
-          <AnimateText
-            text="I'm a Frontend Developer with 3 years of experience, expertise in React, Javascript and Typescript. Skilled
-            in Agile Scrum Methodologies and ERP projects. I like simplify web development to make life easier."
-          />
+          <p className="text-2xl font-medium">{about.fullName}</p>
+          <AnimateText text={about.introduce} />
         </div>
         <Link
           icon={<IconDownload size={18} />}
           className="absolute top-0 right-0 px-4 py-2 h-fit"
-          href={cv}
+          href={about.resume}
           target="_blank"
         >
           Resume
@@ -64,16 +57,16 @@ const SectionAbout = () => {
         <Tag text="Cao Thang Technical College" icon={<IconSchool size={14} />} />
       </ul>
       <div className="flex flex-wrap gap-2">
-        <Link icon={<IconBrandFacebook size={18} />} href={facebook} target="_blank">
+        <Link icon={<IconBrandFacebook size={18} />} href={about.facebook} target="_blank">
           Facebook
         </Link>
-        <Link icon={<IconBrandLinkedin size={18} />} href={linkedin} target="_blank">
+        <Link icon={<IconBrandLinkedin size={18} />} href={about.linkedin} target="_blank">
           LinkedIn
         </Link>
-        <Link icon={<IconBrandGithub size={18} />} href={github} target="_blank">
+        <Link icon={<IconBrandGithub size={18} />} href={about.github} target="_blank">
           Github
         </Link>
-        <Link icon={<IconBrandLeetcode size={18} />} href={leetcode} target="_blank">
+        <Link icon={<IconBrandLeetcode size={18} />} href={about.leetCode} target="_blank">
           Leetcode
         </Link>
       </div>

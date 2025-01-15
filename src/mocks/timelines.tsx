@@ -26,10 +26,10 @@ const timelines: TItem[] = [
   },
   {
     icon: <IconBriefcase />,
-    title: "ByteTech",
+    title: "PangoCDP",
     location: "District 3, Ho Chi Minh City",
     date: "08/2024 - Present",
-    description: "Mid-level Frontend Developer at ByteTech",
+    description: "Mid-level Frontend Developer at PangoCDP",
   },
 ];
 

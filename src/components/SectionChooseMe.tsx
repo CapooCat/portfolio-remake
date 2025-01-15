@@ -9,10 +9,11 @@ import { motion } from "framer-motion";
 import useFramerEffect from "@/hooks/useFramerEffect";
 import Link from "./Link";
 import dataRead from "@/assets/constant/dataRead";
+import { about } from "@/mocks/about";
 
 const SectionChooseMe = () => {
   const variant = useFramerEffect({ effect: "slideUp" });
-  const mail = "mailto:tranthaitat99@gmail.com";
+  const mail = `mailto:${about.email}`;
 
   return (
     <>
