@@ -38,10 +38,21 @@
   @apply border-gray-800;
 }
 
+@layer utilities {
+  .grid-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+      linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 10px 10px, 10px 10px, 50px 50px, 50px 50px;
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  }
+}
+
 :root {
   @apply flex justify-center min-h-[100svh] h-fit text-gray-200/90;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 13.25px;
   line-height: 1.5;
   font-weight: 400;
 
@@ -59,7 +70,7 @@
 }
 
 html {
-  @apply bg-primary/5;
+  @apply bg-primary/[0.04] grid-bg;
 }
 
 @keyframes fadeIn {

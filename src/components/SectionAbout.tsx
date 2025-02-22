@@ -46,6 +46,7 @@ const SectionAbout = () => {
           className="absolute top-0 right-0 px-4 py-2 h-fit"
           href={about.resume}
           target="_blank"
+          data-read={dataRead.resume}
         >
           Resume
         </Link>

@@ -1,6 +1,7 @@
 const dataRead = {
   about:
-    "This section provides a brief introduction about me, including my location, languages, education, and profiles. For more details, you can check out my resume at the top right of this section but you might need to request for it first.",
+    "This section provides a brief introduction about me, including my location, languages, education, and profiles.",
+
   reviews:
     "This section shows what my colleagues and supervisor think of me and highlighting how my contributions add value to the company.",
   skills:
@@ -16,6 +17,7 @@ const dataRead = {
   githubProjects: "This is the total number of projects I have on my GitHub.",
   yearsExpertise: "This is the number of years I've spent working in Frontend Development.",
   colorTheme: "If you find the color uncomfortable to the eye, feel free to adjust it to your preferred choice.",
+  resume: "That's my resume, it contains more details about my experience, but you may need to request access first.",
   robot: "You can click on me to silent",
 };
 
